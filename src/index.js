@@ -16,12 +16,12 @@ exports.min = function min (array) {
 }
 
 exports.max = function max (array) {
-    var max=array[0];
+    var max=array[array.length-1];
     if(array.length===0)
     {
         return 0;
     }
-    for( var i =1; i<array.length; i++)
+    for( var i =array.length-2; i>=0; i--)
    {
     if(array[i]>max)
     {
